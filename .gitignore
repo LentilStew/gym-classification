@@ -1,0 +1,9 @@
+# Ignore node_modules directory in client folder
+client/node_modules/
+
+# Ignore venv directory
+venv/
+
+# Ignore Python bytecode cache files
+__pycache__/
+*.pyc

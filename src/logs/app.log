@@ -1,0 +1,215 @@
+2024-02-16 20:25:51,034 - Server.http_interface - WARNING - A warning message
+2024-02-16 20:25:51,034 - Server.http_interface - ERROR - An error message
+2024-02-16 20:30:11,948 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-02-16 20:30:11,949 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-02-16 20:30:22,822 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 20:30:22] "[33mGET / HTTP/1.1[0m" 404 -
+2024-02-16 20:30:24,959 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 20:30:24] "[33mGET / HTTP/1.1[0m" 404 -
+2024-02-16 20:30:25,138 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 20:30:25] "[33mGET / HTTP/1.1[0m" 404 -
+2024-02-16 20:30:25,291 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 20:30:25] "[33mGET / HTTP/1.1[0m" 404 -
+2024-02-16 20:30:25,430 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 20:30:25] "[33mGET / HTTP/1.1[0m" 404 -
+2024-02-16 20:30:25,567 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 20:30:25] "[33mGET / HTTP/1.1[0m" 404 -
+2024-02-16 20:30:25,718 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 20:30:25] "[33mGET / HTTP/1.1[0m" 404 -
+2024-02-16 20:30:25,849 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 20:30:25] "[33mGET / HTTP/1.1[0m" 404 -
+2024-02-16 20:30:26,008 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 20:30:26] "[33mGET / HTTP/1.1[0m" 404 -
+2024-02-16 20:30:28,835 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 20:30:28] "[33mGET / HTTP/1.1[0m" 404 -
+2024-02-16 20:30:29,004 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 20:30:29] "[33mGET / HTTP/1.1[0m" 404 -
+2024-02-16 20:30:29,152 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 20:30:29] "[33mGET / HTTP/1.1[0m" 404 -
+2024-02-16 20:30:29,286 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 20:30:29] "[33mGET / HTTP/1.1[0m" 404 -
+2024-02-16 20:30:29,426 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 20:30:29] "[33mGET / HTTP/1.1[0m" 404 -
+2024-02-16 20:30:29,560 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 20:30:29] "[33mGET / HTTP/1.1[0m" 404 -
+2024-02-16 20:30:29,690 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 20:30:29] "[33mGET / HTTP/1.1[0m" 404 -
+2024-02-16 20:30:29,832 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 20:30:29] "[33mGET / HTTP/1.1[0m" 404 -
+2024-02-16 20:31:28,099 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 20:31:28] "GET /socket.io/?EIO=4&transport=polling&t=OsqGhZV HTTP/1.1" 200 -
+2024-02-16 20:31:28,542 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 20:31:28] "POST /socket.io/?EIO=4&transport=polling&t=OsqGhgH&sid=nAghyh9yGOpTGF5UAAAA HTTP/1.1" 200 -
+2024-02-16 20:31:28,543 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 20:31:28] "GET /socket.io/?EIO=4&transport=polling&t=OsqGhgI&sid=nAghyh9yGOpTGF5UAAAA HTTP/1.1" 200 -
+2024-02-16 20:31:28,636 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 20:31:28] "GET /socket.io/?EIO=4&transport=polling&t=OsqGhhw&sid=nAghyh9yGOpTGF5UAAAA HTTP/1.1" 200 -
+2024-02-16 20:31:48,077 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 20:31:48] "GET /socket.io/?EIO=4&transport=polling&t=OsqGmRg HTTP/1.1" 200 -
+2024-02-16 20:31:48,475 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 20:31:48] "POST /socket.io/?EIO=4&transport=polling&t=OsqGmXp&sid=A4w_Jl7ed18oJLU_AAAC HTTP/1.1" 200 -
+2024-02-16 20:31:48,476 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 20:31:48] "GET /socket.io/?EIO=4&transport=polling&t=OsqGmXq&sid=A4w_Jl7ed18oJLU_AAAC HTTP/1.1" 200 -
+2024-02-16 20:31:48,561 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 20:31:48] "GET /socket.io/?EIO=4&transport=polling&t=OsqGmZE&sid=A4w_Jl7ed18oJLU_AAAC HTTP/1.1" 200 -
+2024-02-16 20:31:49,068 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 20:31:49] "GET /socket.io/?EIO=4&transport=websocket&sid=nAghyh9yGOpTGF5UAAAA HTTP/1.1" 200 -
+2024-02-16 20:31:53,181 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-02-16 20:31:53,181 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-02-16 20:31:56,025 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 20:31:56] "GET /socket.io/?EIO=4&transport=polling&t=OsqGoNr HTTP/1.1" 200 -
+2024-02-16 20:31:56,036 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 20:31:56] "POST /socket.io/?EIO=4&transport=polling&t=OsqGoN-&sid=vB26wlQh_xucJSPhAAAA HTTP/1.1" 200 -
+2024-02-16 20:31:56,036 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 20:31:56] "GET /socket.io/?EIO=4&transport=polling&t=OsqGoN_&sid=vB26wlQh_xucJSPhAAAA HTTP/1.1" 200 -
+2024-02-16 20:32:52,120 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-02-16 20:32:52,120 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-02-16 20:32:52,535 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 20:32:52] "GET /socket.io/?EIO=4&transport=polling&t=OsqH0Ap HTTP/1.1" 200 -
+2024-02-16 20:32:52,545 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 20:32:52] "POST /socket.io/?EIO=4&transport=polling&t=OsqH0Ay&sid=jP_xZjcKJnAiLhAmAAAA HTTP/1.1" 200 -
+2024-02-16 20:32:52,549 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 20:32:52] "GET /socket.io/?EIO=4&transport=polling&t=OsqH0A-&sid=jP_xZjcKJnAiLhAmAAAA HTTP/1.1" 200 -
+2024-02-16 20:38:57,776 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 20:38:57] "GET /socket.io/?EIO=4&transport=websocket&sid=jP_xZjcKJnAiLhAmAAAA HTTP/1.1" 200 -
+2024-02-16 20:39:13,619 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 20:39:13] "GET /socket.io/?EIO=4&transport=polling&t=OsqITDG HTTP/1.1" 200 -
+2024-02-16 20:39:14,014 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 20:39:14] "POST /socket.io/?EIO=4&transport=polling&t=OsqITJM&sid=NAH8k7CISZO9MO7WAAAC HTTP/1.1" 200 -
+2024-02-16 20:39:14,015 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 20:39:14] "GET /socket.io/?EIO=4&transport=polling&t=OsqITJN&sid=NAH8k7CISZO9MO7WAAAC HTTP/1.1" 200 -
+2024-02-16 20:39:14,139 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 20:39:14] "GET /socket.io/?EIO=4&transport=polling&t=OsqITK_&sid=NAH8k7CISZO9MO7WAAAC HTTP/1.1" 200 -
+2024-02-16 20:43:22,285 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-02-16 20:43:22,285 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-02-16 20:43:25,147 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 20:43:25] "GET /socket.io/?EIO=4&transport=polling&t=OsqJQc9 HTTP/1.1" 200 -
+2024-02-16 20:43:25,155 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 20:43:25] "POST /socket.io/?EIO=4&transport=polling&t=OsqJQdV&sid=ARfPz1UPHpn0EKBeAAAA HTTP/1.1" 200 -
+2024-02-16 20:43:25,159 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 20:43:25] "GET /socket.io/?EIO=4&transport=polling&t=OsqJQdW&sid=ARfPz1UPHpn0EKBeAAAA HTTP/1.1" 200 -
+2024-02-16 20:49:54,060 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 20:49:54] "GET /socket.io/?EIO=4&transport=websocket&sid=ARfPz1UPHpn0EKBeAAAA HTTP/1.1" 200 -
+2024-02-16 20:49:55,132 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 20:49:55] "GET /socket.io/?EIO=4&transport=polling&t=OsqKvqv HTTP/1.1" 200 -
+2024-02-16 20:49:55,529 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 20:49:55] "POST /socket.io/?EIO=4&transport=polling&t=OsqKvww&sid=DTb97HsA-CeI7wweAAAC HTTP/1.1" 200 -
+2024-02-16 20:49:55,529 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 20:49:55] "GET /socket.io/?EIO=4&transport=polling&t=OsqKvwx&sid=DTb97HsA-CeI7wweAAAC HTTP/1.1" 200 -
+2024-02-16 20:49:55,608 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 20:49:55] "GET /socket.io/?EIO=4&transport=polling&t=OsqKvy9&sid=DTb97HsA-CeI7wweAAAC HTTP/1.1" 200 -
+2024-02-16 20:51:49,300 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-02-16 20:51:49,300 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-02-16 20:51:52,737 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 20:51:52] "GET /socket.io/?EIO=4&transport=polling&t=OsqLMYJ HTTP/1.1" 200 -
+2024-02-16 20:51:52,816 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 20:51:52] "POST /socket.io/?EIO=4&transport=polling&t=OsqLMZb&sid=6b61WT1UlfuUKFc4AAAA HTTP/1.1" 200 -
+2024-02-16 20:51:52,826 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 20:51:52] "GET /socket.io/?EIO=4&transport=polling&t=OsqLMZc&sid=6b61WT1UlfuUKFc4AAAA HTTP/1.1" 200 -
+2024-02-16 20:53:41,138 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-02-16 20:53:41,139 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-02-16 20:53:41,724 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 20:53:41] "GET /socket.io/?EIO=4&transport=polling&t=OsqLn9N HTTP/1.1" 200 -
+2024-02-16 20:53:41,734 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 20:53:41] "POST /socket.io/?EIO=4&transport=polling&t=OsqLn9Y&sid=RGKeDkStEqbmFKsIAAAA HTTP/1.1" 200 -
+2024-02-16 20:53:41,796 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 20:53:41] "GET /socket.io/?EIO=4&transport=polling&t=OsqLnAV&sid=RGKeDkStEqbmFKsIAAAA HTTP/1.1" 200 -
+2024-02-16 20:55:15,100 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-02-16 20:55:15,101 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-02-16 20:55:17,159 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 20:55:17] "GET /socket.io/?EIO=4&transport=polling&t=OsqM8SZ HTTP/1.1" 200 -
+2024-02-16 20:55:17,173 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 20:55:17] "POST /socket.io/?EIO=4&transport=polling&t=OsqM8Sk&sid=Y541lOOHpbBx_lwbAAAA HTTP/1.1" 200 -
+2024-02-16 20:55:17,173 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 20:55:17] "GET /socket.io/?EIO=4&transport=polling&t=OsqM8Sl&sid=Y541lOOHpbBx_lwbAAAA HTTP/1.1" 200 -
+2024-02-16 20:57:31,365 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-02-16 20:57:31,366 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-02-16 20:57:32,772 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 20:57:32] "GET /socket.io/?EIO=4&transport=polling&t=OsqMfZV HTTP/1.1" 200 -
+2024-02-16 20:57:32,848 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 20:57:32] "POST /socket.io/?EIO=4&transport=polling&t=OsqMfaY&sid=WkyAr21C7h6MCpXLAAAA HTTP/1.1" 200 -
+2024-02-16 20:57:32,849 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 20:57:32] "GET /socket.io/?EIO=4&transport=polling&t=OsqMfaZ&sid=WkyAr21C7h6MCpXLAAAA HTTP/1.1" 200 -
+2024-02-16 20:57:47,318 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-02-16 20:57:47,319 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-02-16 20:57:50,265 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 20:57:50] "GET /socket.io/?EIO=4&transport=polling&t=OsqMjqr HTTP/1.1" 200 -
+2024-02-16 20:57:50,275 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 20:57:50] "POST /socket.io/?EIO=4&transport=polling&t=OsqMjq_&sid=6I18lxa8l4-FPWPzAAAA HTTP/1.1" 200 -
+2024-02-16 20:57:50,358 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 20:57:50] "GET /socket.io/?EIO=4&transport=polling&t=OsqMjsH&sid=6I18lxa8l4-FPWPzAAAA HTTP/1.1" 200 -
+2024-02-16 21:14:37,584 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-02-16 21:14:37,585 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-02-16 21:14:43,069 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 21:14:43] "GET /socket.io/?EIO=4&transport=polling&t=OsqQb5v HTTP/1.1" 200 -
+2024-02-16 21:14:43,157 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 21:14:43] "POST /socket.io/?EIO=4&transport=polling&t=OsqQb7E&sid=gJ1DrUTZ6pExD5joAAAA HTTP/1.1" 200 -
+2024-02-16 21:14:43,158 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 21:14:43] "GET /socket.io/?EIO=4&transport=polling&t=OsqQb7G&sid=gJ1DrUTZ6pExD5joAAAA HTTP/1.1" 200 -
+2024-02-16 21:16:20,116 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-02-16 21:16:20,116 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-02-16 21:16:22,069 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 21:16:22] "GET /socket.io/?EIO=4&transport=polling&t=OsqQzGn HTTP/1.1" 200 -
+2024-02-16 21:16:22,078 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 21:16:22] "POST /socket.io/?EIO=4&transport=polling&t=OsqQzGx&sid=NjjMVoUSwvWG2J4EAAAA HTTP/1.1" 200 -
+2024-02-16 21:16:22,127 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 21:16:22] "GET /socket.io/?EIO=4&transport=polling&t=OsqQzHg&sid=NjjMVoUSwvWG2J4EAAAA HTTP/1.1" 200 -
+2024-02-16 21:16:38,475 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-02-16 21:16:38,476 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-02-16 21:16:40,069 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 21:16:40] "GET /socket.io/?EIO=4&transport=polling&t=OsqR1g1 HTTP/1.1" 200 -
+2024-02-16 21:16:40,078 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 21:16:40] "POST /socket.io/?EIO=4&transport=polling&t=OsqR1gA&sid=_bm8KxsAmObdAqJEAAAA HTTP/1.1" 200 -
+2024-02-16 21:16:40,126 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 21:16:40] "GET /socket.io/?EIO=4&transport=polling&t=OsqR1gw&sid=_bm8KxsAmObdAqJEAAAA HTTP/1.1" 200 -
+2024-02-16 21:19:05,150 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 21:19:05] "GET /socket.io/?EIO=4&transport=polling&t=OsqRb4w HTTP/1.1" 200 -
+2024-02-16 21:19:05,164 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 21:19:05] "[33mGET /main.cdf8a4a8e5f2d8185fad.hot-update.json HTTP/1.1[0m" 404 -
+2024-02-16 21:19:05,190 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 21:19:05] "GET /socket.io/?EIO=4&transport=websocket&sid=_bm8KxsAmObdAqJEAAAA HTTP/1.1" 200 -
+2024-02-16 21:19:05,616 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 21:19:05] "POST /socket.io/?EIO=4&transport=polling&t=OsqRbCC&sid=zySQ-KpIyNzFU0S4AAAC HTTP/1.1" 200 -
+2024-02-16 21:19:05,617 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 21:19:05] "GET /socket.io/?EIO=4&transport=polling&t=OsqRbCD&sid=zySQ-KpIyNzFU0S4AAAC HTTP/1.1" 200 -
+2024-02-16 21:19:05,712 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 21:19:05] "GET /socket.io/?EIO=4&transport=polling&t=OsqRbDk&sid=zySQ-KpIyNzFU0S4AAAC HTTP/1.1" 200 -
+2024-02-16 21:19:06,335 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 21:19:06] "GET /socket.io/?EIO=4&transport=polling&t=OsqRbNP HTTP/1.1" 200 -
+2024-02-16 21:19:06,790 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 21:19:06] "POST /socket.io/?EIO=4&transport=polling&t=OsqRbUR&sid=G4vTQJ-ANHT5SjsDAAAE HTTP/1.1" 200 -
+2024-02-16 21:19:06,791 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 21:19:06] "GET /socket.io/?EIO=4&transport=polling&t=OsqRbUS&sid=G4vTQJ-ANHT5SjsDAAAE HTTP/1.1" 200 -
+2024-02-16 21:19:06,901 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 21:19:06] "GET /socket.io/?EIO=4&transport=polling&t=OsqRbWI&sid=G4vTQJ-ANHT5SjsDAAAE HTTP/1.1" 200 -
+2024-02-16 21:19:26,704 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-02-16 21:19:26,704 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-02-16 21:19:28,023 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 21:19:28] "GET /socket.io/?EIO=4&transport=polling&t=OsqRggH HTTP/1.1" 200 -
+2024-02-16 21:19:28,034 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 21:19:28] "POST /socket.io/?EIO=4&transport=polling&t=OsqRggU&sid=6NdkBhClqvDoSRRrAAAA HTTP/1.1" 200 -
+2024-02-16 21:19:28,038 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 21:19:28] "GET /socket.io/?EIO=4&transport=polling&t=OsqRggV&sid=6NdkBhClqvDoSRRrAAAA HTTP/1.1" 200 -
+2024-02-16 21:19:29,069 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 21:19:29] "GET /socket.io/?EIO=4&transport=polling&t=OsqRgwf HTTP/1.1" 200 -
+2024-02-16 21:19:29,078 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 21:19:29] "POST /socket.io/?EIO=4&transport=polling&t=OsqRgwo&sid=xGXq7LD4pzaKRk4PAAAC HTTP/1.1" 200 -
+2024-02-16 21:19:29,128 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 21:19:29] "GET /socket.io/?EIO=4&transport=polling&t=OsqRgxa&sid=xGXq7LD4pzaKRk4PAAAC HTTP/1.1" 200 -
+2024-02-16 21:23:12,768 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-02-16 21:23:12,768 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-02-16 21:23:14,071 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 21:23:14] "GET /socket.io/?EIO=4&transport=polling&t=OsqSXsH HTTP/1.1" 200 -
+2024-02-16 21:23:14,084 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 21:23:14] "POST /socket.io/?EIO=4&transport=polling&t=OsqSXsU&sid=2Et2EkDdDehVFwbaAAAA HTTP/1.1" 200 -
+2024-02-16 21:23:14,085 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 21:23:14] "GET /socket.io/?EIO=4&transport=polling&t=OsqSXsV&sid=2Et2EkDdDehVFwbaAAAA HTTP/1.1" 200 -
+2024-02-16 21:23:15,068 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 21:23:15] "GET /socket.io/?EIO=4&transport=polling&t=OsqSY5v HTTP/1.1" 200 -
+2024-02-16 21:23:15,077 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 21:23:15] "POST /socket.io/?EIO=4&transport=polling&t=OsqSY62&sid=V6QvB0znWFJ5rZ3kAAAC HTTP/1.1" 200 -
+2024-02-16 21:23:15,156 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 21:23:15] "GET /socket.io/?EIO=4&transport=polling&t=OsqSY7G&sid=V6QvB0znWFJ5rZ3kAAAC HTTP/1.1" 200 -
+2024-02-16 21:23:15,166 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 21:23:15] "GET /socket.io/?EIO=4&transport=polling&t=OsqSY7S&sid=V6QvB0znWFJ5rZ3kAAAC HTTP/1.1" 200 -
+2024-02-16 21:50:46,389 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-02-16 21:50:46,389 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-02-16 21:50:49,496 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 21:50:49] "GET /socket.io/?EIO=4&transport=polling&t=OsqYs0K HTTP/1.1" 200 -
+2024-02-16 21:50:49,564 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 21:50:49] "POST /socket.io/?EIO=4&transport=polling&t=OsqYs1M&sid=cp9feQ53liTnVc6aAAAA HTTP/1.1" 200 -
+2024-02-16 21:50:49,565 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 21:50:49] "GET /socket.io/?EIO=4&transport=polling&t=OsqYs1M.0&sid=cp9feQ53liTnVc6aAAAA HTTP/1.1" 200 -
+2024-02-16 21:50:51,069 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 21:50:51] "GET /socket.io/?EIO=4&transport=polling&t=OsqYsOv HTTP/1.1" 200 -
+2024-02-16 21:50:51,165 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 21:50:51] "POST /socket.io/?EIO=4&transport=polling&t=OsqYsQN&sid=l4HA24PsAZN4keosAAAC HTTP/1.1" 200 -
+2024-02-16 21:50:51,165 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 21:50:51] "GET /socket.io/?EIO=4&transport=polling&t=OsqYsQO&sid=l4HA24PsAZN4keosAAAC HTTP/1.1" 200 -
+2024-02-16 21:50:51,179 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 21:50:51] "GET /socket.io/?EIO=4&transport=polling&t=OsqYsQe&sid=l4HA24PsAZN4keosAAAC HTTP/1.1" 200 -
+2024-02-16 22:01:33,409 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 22:01:33] "GET /socket.io/?EIO=4&transport=websocket&sid=cp9feQ53liTnVc6aAAAA HTTP/1.1" 200 -
+2024-02-16 22:01:34,537 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 22:01:34] "GET /socket.io/?EIO=4&transport=polling&t=OsqbJV6 HTTP/1.1" 200 -
+2024-02-16 22:01:34,931 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 22:01:34] "POST /socket.io/?EIO=4&transport=polling&t=OsqbJbA&sid=O7duHJOWFvYoPb3ZAAAE HTTP/1.1" 200 -
+2024-02-16 22:01:34,931 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 22:01:34] "GET /socket.io/?EIO=4&transport=polling&t=OsqbJbB&sid=O7duHJOWFvYoPb3ZAAAE HTTP/1.1" 200 -
+2024-02-16 22:01:35,006 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 22:01:35] "GET /socket.io/?EIO=4&transport=polling&t=OsqbJcQ&sid=O7duHJOWFvYoPb3ZAAAE HTTP/1.1" 200 -
+2024-02-16 22:03:28,972 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-02-16 22:03:28,972 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-02-16 22:03:29,233 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 22:03:29] "GET /socket.io/?EIO=4&transport=polling&t=OsqblVC HTTP/1.1" 200 -
+2024-02-16 22:03:29,242 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 22:03:29] "POST /socket.io/?EIO=4&transport=polling&t=OsqblVN&sid=NnTuPTzYshbvNf2zAAAA HTTP/1.1" 200 -
+2024-02-16 22:03:29,245 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 22:03:29] "GET /socket.io/?EIO=4&transport=polling&t=OsqblVO&sid=NnTuPTzYshbvNf2zAAAA HTTP/1.1" 200 -
+2024-02-16 22:03:30,069 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 22:03:30] "GET /socket.io/?EIO=4&transport=polling&t=OsqbliH HTTP/1.1" 200 -
+2024-02-16 22:03:30,080 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 22:03:30] "POST /socket.io/?EIO=4&transport=polling&t=OsqbliS&sid=LNAP8Z-XzXBBQSsRAAAC HTTP/1.1" 200 -
+2024-02-16 22:03:30,083 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 22:03:30] "GET /socket.io/?EIO=4&transport=polling&t=OsqbliT&sid=LNAP8Z-XzXBBQSsRAAAC HTTP/1.1" 200 -
+2024-02-16 22:07:21,633 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-02-16 22:07:21,633 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-02-16 22:07:22,070 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 22:07:22] "GET /socket.io/?EIO=4&transport=polling&t=OsqceLH HTTP/1.1" 200 -
+2024-02-16 22:07:22,077 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 22:07:22] "POST /socket.io/?EIO=4&transport=polling&t=OsqceLQ&sid=MIkvL9G-Rtf2n-d5AAAA HTTP/1.1" 200 -
+2024-02-16 22:07:22,079 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 22:07:22] "GET /socket.io/?EIO=4&transport=polling&t=OsqceLQ.0&sid=MIkvL9G-Rtf2n-d5AAAA HTTP/1.1" 200 -
+2024-02-16 22:07:22,163 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 22:07:22] "GET /socket.io/?EIO=4&transport=polling&t=OsqceMk HTTP/1.1" 200 -
+2024-02-16 22:07:22,172 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 22:07:22] "POST /socket.io/?EIO=4&transport=polling&t=OsqceMv&sid=IHELYpocvUM8jp29AAAC HTTP/1.1" 200 -
+2024-02-16 22:07:22,178 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 22:07:22] "GET /socket.io/?EIO=4&transport=polling&t=OsqceMx&sid=IHELYpocvUM8jp29AAAC HTTP/1.1" 200 -
+2024-02-16 22:08:33,354 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-02-16 22:08:33,354 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-02-16 22:08:34,562 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 22:08:34] "GET /socket.io/?EIO=4&transport=polling&t=Osqcw1z HTTP/1.1" 200 -
+2024-02-16 22:08:34,574 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 22:08:34] "POST /socket.io/?EIO=4&transport=polling&t=Osqcw29&sid=ehPdnqUMu3mon0PuAAAA HTTP/1.1" 200 -
+2024-02-16 22:08:34,577 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 22:08:34] "GET /socket.io/?EIO=4&transport=polling&t=Osqcw2B&sid=ehPdnqUMu3mon0PuAAAA HTTP/1.1" 200 -
+2024-02-16 22:08:36,068 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 22:08:36] "GET /socket.io/?EIO=4&transport=polling&t=OsqcwPX HTTP/1.1" 200 -
+2024-02-16 22:08:36,157 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 22:08:36] "POST /socket.io/?EIO=4&transport=polling&t=OsqcwQv&sid=5ryrmHCPvoBS6FxQAAAC HTTP/1.1" 200 -
+2024-02-16 22:08:36,158 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 22:08:36] "GET /socket.io/?EIO=4&transport=polling&t=OsqcwQw&sid=5ryrmHCPvoBS6FxQAAAC HTTP/1.1" 200 -
+2024-02-16 22:11:11,368 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-02-16 22:11:11,368 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-02-16 22:11:13,069 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 22:11:13] "GET /socket.io/?EIO=4&transport=polling&t=OsqdWkf HTTP/1.1" 200 -
+2024-02-16 22:11:13,080 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 22:11:13] "POST /socket.io/?EIO=4&transport=polling&t=OsqdWkq&sid=Q3k7KRo3ZICInr_6AAAA HTTP/1.1" 200 -
+2024-02-16 22:11:13,085 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 22:11:13] "GET /socket.io/?EIO=4&transport=polling&t=OsqdWks&sid=Q3k7KRo3ZICInr_6AAAA HTTP/1.1" 200 -
+2024-02-16 22:11:14,069 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 22:11:14] "GET /socket.io/?EIO=4&transport=polling&t=OsqdW-H HTTP/1.1" 200 -
+2024-02-16 22:11:14,159 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 22:11:14] "POST /socket.io/?EIO=4&transport=polling&t=OsqdW_f&sid=9sMJFxLoHgNUccU7AAAC HTTP/1.1" 200 -
+2024-02-16 22:11:14,159 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2024 22:11:14] "GET /socket.io/?EIO=4&transport=polling&t=OsqdW_g&sid=9sMJFxLoHgNUccU7AAAC HTTP/1.1" 200 -
+2024-02-17 12:51:24,446 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-02-17 12:51:24,446 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-02-17 12:51:37,724 - werkzeug - INFO - 127.0.0.1 - - [17/Feb/2024 12:51:37] "GET /socket.io/?EIO=4&transport=polling&t=Ostn1NF HTTP/1.1" 200 -
+2024-02-17 12:51:38,201 - werkzeug - INFO - 127.0.0.1 - - [17/Feb/2024 12:51:38] "POST /socket.io/?EIO=4&transport=polling&t=Ostn1VJ&sid=4ngSk5eS8E98NxbdAAAA HTTP/1.1" 200 -
+2024-02-17 12:51:38,206 - werkzeug - INFO - 127.0.0.1 - - [17/Feb/2024 12:51:38] "GET /socket.io/?EIO=4&transport=polling&t=Ostn1VK&sid=4ngSk5eS8E98NxbdAAAA HTTP/1.1" 200 -
+2024-02-17 12:51:38,320 - werkzeug - INFO - 127.0.0.1 - - [17/Feb/2024 12:51:38] "GET /socket.io/?EIO=4&transport=polling&t=Ostn1XC&sid=4ngSk5eS8E98NxbdAAAA HTTP/1.1" 200 -
+2024-02-17 12:53:20,934 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-02-17 12:53:20,935 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-02-17 12:53:23,174 - werkzeug - INFO - 127.0.0.1 - - [17/Feb/2024 12:53:23] "GET /socket.io/?EIO=4&transport=polling&t=OstnR0z HTTP/1.1" 200 -
+2024-02-17 12:53:23,188 - werkzeug - INFO - 127.0.0.1 - - [17/Feb/2024 12:53:23] "POST /socket.io/?EIO=4&transport=polling&t=OstnR7j&sid=oMVL4uLZnWGzUJD9AAAA HTTP/1.1" 200 -
+2024-02-17 12:53:23,189 - werkzeug - INFO - 127.0.0.1 - - [17/Feb/2024 12:53:23] "GET /socket.io/?EIO=4&transport=polling&t=OstnR7k&sid=oMVL4uLZnWGzUJD9AAAA HTTP/1.1" 200 -
+2024-02-17 12:54:12,817 - werkzeug - INFO - 127.0.0.1 - - [17/Feb/2024 12:54:12] "GET /socket.io/?EIO=4&transport=websocket&sid=oMVL4uLZnWGzUJD9AAAA HTTP/1.1" 200 -
+2024-02-18 16:18:30,872 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-02-18 16:18:30,873 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-02-18 16:18:39,652 - werkzeug - INFO - 127.0.0.1 - - [18/Feb/2024 16:18:39] "GET /socket.io/?EIO=4&transport=polling&t=Oszf_qX HTTP/1.1" 200 -
+2024-02-18 16:18:40,055 - werkzeug - INFO - 127.0.0.1 - - [18/Feb/2024 16:18:40] "POST /socket.io/?EIO=4&transport=polling&t=Oszf_wm&sid=Gu8iZFB86wQLCNpQAAAA HTTP/1.1" 200 -
+2024-02-18 16:18:40,057 - werkzeug - INFO - 127.0.0.1 - - [18/Feb/2024 16:18:40] "GET /socket.io/?EIO=4&transport=polling&t=Oszf_wn&sid=Gu8iZFB86wQLCNpQAAAA HTTP/1.1" 200 -
+2024-02-18 16:18:40,150 - werkzeug - INFO - 127.0.0.1 - - [18/Feb/2024 16:18:40] "GET /socket.io/?EIO=4&transport=polling&t=Oszf_yJ&sid=Gu8iZFB86wQLCNpQAAAA HTTP/1.1" 200 -
+2024-02-18 16:20:34,135 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-02-18 16:20:34,136 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-02-18 16:20:34,350 - werkzeug - INFO - 127.0.0.1 - - [18/Feb/2024 16:20:34] "GET /socket.io/?EIO=4&transport=polling&t=OszgRqd HTTP/1.1" 200 -
+2024-02-18 16:20:34,362 - werkzeug - INFO - 127.0.0.1 - - [18/Feb/2024 16:20:34] "POST /socket.io/?EIO=4&transport=polling&t=OszgRqp&sid=X8qBCWlQg9CMHShWAAAA HTTP/1.1" 200 -
+2024-02-18 16:20:34,362 - werkzeug - INFO - 127.0.0.1 - - [18/Feb/2024 16:20:34] "GET /socket.io/?EIO=4&transport=polling&t=OszgRqq&sid=X8qBCWlQg9CMHShWAAAA HTTP/1.1" 200 -
+2024-02-18 16:45:04,483 - werkzeug - INFO - 127.0.0.1 - - [18/Feb/2024 16:45:04] "GET /socket.io/?EIO=4&transport=websocket&sid=X8qBCWlQg9CMHShWAAAA HTTP/1.1" 200 -
