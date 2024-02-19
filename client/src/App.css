@@ -1,0 +1,92 @@
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('../public/Roboto/Roboto-Regular.ttf'),
+}
+
+@font-face {
+  font-family: 'Josefin-Slab';
+  src: url('./fonts/Josefin_Slab/static/JosefinSlab-Regular.ttf'),
+}
+
+:root {
+  --color1: #FACA78;
+  --color2: #764838;
+  --color3: #68C7C1;
+  --color4: #DD5341;
+  --color5: #F37D59;
+  --color-black: #0E0F12;
+  --color-white: rgb(189, 187, 223);
+}
+
+.switch-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+.button:hover {
+  transition-duration: .25s;
+  transition-timing-function: ease-in;
+  cursor: pointer;
+  transform: scale(1.1);
+  background-color: var(--color-black); 
+  color: var(--color-white);
+}
+
+.arrow-left {
+  padding: .2rem;
+  margin: 1rem;
+  width: 2rem;
+}
+
+.arrow-right {
+  width: 2rem;
+  margin: 1rem;
+  padding: .2rem;
+  transform: rotate(180deg);
+}
+
+.arrow-right:hover {
+  transform: scale(1.1) rotate(180deg);
+}
+
+body {
+  margin: 0;
+  font-family: 'Josefin-Slab';
+}
+
+.line-chart {
+  background-color: var(--color-black);
+  height: fit-content;
+}
+
+.line-chart:hover {
+  box-shadow: -10px 10px var(--color3);
+  transition-duration: .3s;
+
+
+}
+
+.motion-recognition-body {
+  background-color: rgb(189, 187, 223);
+}
+
+.switch-button-remove-on {
+  background-color: #0E0F12;
+  color: white;
+}
+
+.motion-input{
+  background-color: white;
+
+  border: none;
+  width: 60%;
+  margin: 1rem;
+
+}
