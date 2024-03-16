@@ -12,7 +12,7 @@ from Tracker.TrackerPacket import TrackerPacket
 import requests
 import struct
 from Tracker.Motion import Motion
-
+import time as _time
 
 class FastPutQueue(Queue):
     def fast_put(self, item):
@@ -43,7 +43,7 @@ class Tracker():
         self.packet_size: int | None = None
         self.stop_receiver_event: threading.Event = threading.Event()
         self.socket_timeout: int = socket_timeout
-        self._tracker_settings = None
+        self._tracker_settings:None|dict = None
         """
         {
 "{");
@@ -61,11 +61,17 @@ class Tracker():
         self.connection_id = ""
         self.tracker_id = ""
 
-        self.socket_fd: socket.socket = socket.socket(
-            socket.AF_INET, socket.SOCK_DGRAM)
-        self.socket_fd.bind((self.receiver_ip, self.receiver_port))
-        self.socket_fd.settimeout(self.socket_timeout)
 
+        
+    def is_connected(self):
+        return self.tracker_keep_client(self.connection_id)
+    
+    def get_settings(self,name:str):
+        if self._tracker_settings is None:
+            return None
+        return self._tracker_settings.get(name)
+    
+    
     # returns ID of device if running
     def tracker_is_alive(self) -> bool | str:
         res: requests.Response
@@ -101,7 +107,7 @@ class Tracker():
             res: requests.Response = requests.post(
                 f"http://{self.tracker_ip}/add_client", data=payload)
         except requests.exceptions.ConnectionError as errc:
-            print("Tracker not fount")
+            print("Tracker not found")
             return False
         except requests.exceptions.RequestException as err:
             print(err)
@@ -116,7 +122,7 @@ class Tracker():
             res: requests.Response = requests.post(
                 f"http://{self.tracker_ip}/keep_client", data=connection_id)
         except requests.exceptions.ConnectionError as errc:
-            print("Tracker not fount")
+            print("Tracker not found")
             return False
         except requests.exceptions.RequestException as err:
             print(err)
@@ -148,6 +154,7 @@ class Tracker():
     def _packet_receiver(self,autoreconect: bool = True):
         is_connected: bool = self.receiver_connect()
         if (not autoreconect and not is_connected):
+            self.receiver_stop()
             return
 
         while (not self.stop_receiver_event.is_set()):
@@ -155,6 +162,8 @@ class Tracker():
             if autoreconect:
                 if not self.tracker_keep_client(self.connection_id):
                     self.receiver_connect()
+                    _time.sleep(1)
+                    continue
             else:
                 break
 
@@ -180,6 +189,11 @@ class Tracker():
         """
         autoreconnect: nb of timeout retries before resending client, if None don't retry
         """
+        self.socket_fd: socket.socket = socket.socket(
+            socket.AF_INET, socket.SOCK_DGRAM)
+        self.socket_fd.bind((self.receiver_ip, self.receiver_port))
+        self.socket_fd.settimeout(self.socket_timeout)
+        
         self.receiver_thread = threading.Thread(target=self._packet_receiver,args=(autoreconect,))
         self.receiver_thread.daemon = True
         self.receiver_thread.start()
@@ -191,7 +205,10 @@ class Tracker():
             self.stop_receiver_event.set()
             self.receiver_thread.join()
             self.stop_receiver_event.clear()
-
+            self.socket_fd.close()
+        elif self.receiver_thread is None or not self.receiver_thread.is_alive():
+            self.socket_fd.close()
+            
     def receiver_join(self):
         if self.receiver_thread is not None and self.receiver_thread.is_alive():
             self.receiver_thread.join()
@@ -202,7 +219,7 @@ class Tracker():
 
 
 class TrackerControls(Tracker):
-    def __init__(self, tracker_ip: str, receiver_ip: str, receiver_port: int,max_motion_in_q:int=10, file_template: str="{INDEX}", *args, **kwargs):
+    def __init__(self, tracker_ip: str, receiver_ip: str, receiver_port: int,max_motion_in_q:int=10, file_template: str="{INDEX}",inputs:bool=False, *args, **kwargs):
         super().__init__(tracker_ip, receiver_ip, receiver_port, *args, **kwargs)
         self.file_template = file_template
         """
@@ -215,26 +232,32 @@ class TrackerControls(Tracker):
             "switch": self.recording_switch
         }
 
-        def controls():
-            while (True):
-                
-                new_input: str = input()
-                
-                
-                action: Callable | None = self.input_actions.get(new_input.split()[0], None)
-                if not action is None:
-                    action(new_input)
-                else:
-                    print(f"Invalid action {new_input}")
 
-        controls_thread:threading.Thread = threading.Thread(target=controls, daemon=True)
-        controls_thread.start()
+
+
+        if inputs:
+            controls_thread:threading.Thread = threading.Thread(target=self._controls_thread_func, daemon=True)
+            controls_thread.start()
+        
         self.index = 0
         self.settings_lock: threading.Lock = threading.Lock()
         self.settings_file_template: str = file_template
         self.settings_record: bool = False
         self.settings_motion: Motion | None = None
-
+        
+    def _controls_thread_func(self):
+        while (True):
+            self.controls(input())
+            
+    def controls(self,new_input: str):
+        
+        action: Callable | None = self.input_actions.get(new_input.split()[0], None)
+        if not action is None:
+            return action(new_input)
+        else:
+            print(f"Invalid action {new_input}")
+            return None
+            
     def recording_switch(self,input_str:str):
         
         split_str = input_str.split()
@@ -243,8 +266,6 @@ class TrackerControls(Tracker):
         with self.settings_lock:
             if (self.settings_record and not self.settings_motion is None):
                 self.index += 1
-                
-                self.settings_motion.close()
                 self._motion_q.fast_put(self.settings_motion)
                 self.settings_motion = None
             else:
@@ -255,7 +276,8 @@ class TrackerControls(Tracker):
                 self.settings_motion = Motion(file_name=file_name, tracker_settings=self._tracker_settings)
 
             self.settings_record = not self.settings_record
-            
+        
+        return True
     def get_motion(self) -> Motion:
         return self._motion_q.get()
             
@@ -281,6 +303,8 @@ class TrackerControls(Tracker):
             if autoreconect:
                 if not self.tracker_keep_client(self.connection_id):
                     self.receiver_connect()
+                    _time.sleep(1)
+                    continue
             else:
                 break
 
@@ -290,7 +314,6 @@ class TrackerControls(Tracker):
                 # EVERY TEN PACKETS RECEIVED (5 SECONDS) KEEP ALIVE
                 # IF CLIENT LOST BREAK
                 if index % 10 == 0 and not self.tracker_keep_client(self.connection_id):
-                    
                     break
 
                 try:
@@ -304,7 +327,3 @@ class TrackerControls(Tracker):
                 self.on_packet(new_packet)
                 self._packet_q.fast_put(new_packet)
                 index += 1
-
-
-
-

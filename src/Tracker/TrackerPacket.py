@@ -10,7 +10,7 @@ from io import BufferedRandom
 from typing import List, Callable, final
 import requests
 import base64
-
+from settings import ESP_VALUES_DTYPE
 
 class TrackerPacket:
     def __init__(self, raw_data: bytes) -> None:
@@ -19,10 +19,9 @@ class TrackerPacket:
         self.timestamp_nsec: int = 0
 
         self.gyro_sensitivity: float = 0
-        self.gyro_order: str = ""
 
         self.acc_sensitivity: float = 0
-        self.acc_order: str = ""
+        self.order: str = ""
 
         self.nb_readings: int = 0
         self.packet_index: int = 0
@@ -32,56 +31,19 @@ class TrackerPacket:
         self.raw_data: bytes = raw_data
 
         # self.raw_data:bytes = raw_data
-        dt = np.dtype('>i2')  # type:ignore
+        dt = np.dtype(ESP_VALUES_DTYPE)  # type:ignore
         header_len = raw_data.find(0)
         
-        
-        
-        
-        
-        
-        
         header_dict: dict = json.loads(raw_data[0:header_len].decode('utf-8'))
+        self.header_dict = header_dict
         for key, val in header_dict.items():
             setattr(self, key, val)
-        
-        """
-        
-        # Iterate over the range to print accelerometer readings
-        for i in range(self.nb_readings*6):
-            print(f"{raw_data[header_len + i * 2 + 1]:02X}{raw_data[header_len + i * 2]:02X}", end=" ")
+        if(len(self.order) == 0):
+            self.order = "XYZABC"
+        self.readings = np.frombuffer(raw_data, dtype=dt,
+                                          count=self.nb_readings * len(self.order),
+                                          offset=header_len+1).reshape((6,25))
 
-        # Print a newline character after printing all readings
-        print()
-        print()
-        USED FOR ERROR HTONS ENDIANNESS
-        """
-
-        offset = header_len+1
-        count = self.nb_readings * len(self.acc_order)
-
-        # THE NUMPY OFFSET IS IN BYTES AND THE COUNT IS IN sizeof(DT)
-        self.acc_readings = np.frombuffer(raw_data, dtype=dt,
-                                          count=count,
-                                          offset=offset).reshape(
-                                              (-1, len(self.acc_order))
-        )
-
-        offset += (self.nb_readings * len(self.acc_order) * 2)
-        count = self.nb_readings * len(self.gyro_order)
-
-        self.gyro_readings = np.frombuffer(raw_data, dtype=dt,
-                                           count=count,
-                                           offset=offset
-                                           ).reshape(
-                                               (-1, len(self.gyro_order))
-        )
-
-    def as_linear(self):
-        x_acc, y_acc, z_acc = np.transpose(self.acc_readings)
-        x_gyro, y_gyro, z_gyro = np.transpose(self.gyro_readings)
-        
-        return (x_acc, y_acc, z_acc, x_gyro, y_gyro, z_gyro)
 
     def as_packet(self) -> dict:
         data = {
@@ -97,18 +59,15 @@ class TrackerPacket:
             "hz": self.hz,
             "session_id": self.session_id
         }
-        streams: List[np.ndarray] = list(self.as_linear())
-        packet = {"streams": [], "header": data}
+        packet = {"streams": self.readings.tolist(), "header": data}
         
-        for stream in streams:
-            packet["streams"].append(stream.tolist())
         
         return packet
 
 
 def tracker_packet_binary_from_dict(packets: dict, packet_size: int):
     raw_data_packet = bytearray(packet_size)
-    dt = np.dtype('>i2')
+    dt = np.dtype(ESP_VALUES_DTYPE)
     acc_readings = np.array(packets.pop("acc_readings"), dtype=dt).tobytes()
     gyro_readings = np.array(packets.pop("gyro_readings"), dtype=dt).tobytes()
 
@@ -123,3 +82,25 @@ def tracker_packet_binary_from_dict(packets: dict, packet_size: int):
                     1 + len(acc_readings) + len(gyro_readings)] = gyro_readings
 
     return raw_data_packet
+
+def packet_copy(packets:TrackerPacket):
+    new_packet = bytearray(len(packets.raw_data))
+    dt = np.dtype(ESP_VALUES_DTYPE)
+
+    
+    json_packets = json.dumps(packets.header_dict).encode('utf-8')
+
+    new_packet[:len(json_packets)] = json_packets
+    new_packet[len(json_packets)] = 0
+    count = len(json_packets) + 1
+    for stream in packets.readings:
+        acc_readings = np.array(stream, dtype=dt).tobytes()
+        new_packet[count:count+len(acc_readings)] = acc_readings
+        count += len(acc_readings)
+
+    for stream in packets.readings:
+        gyro_readings = np.array(stream, dtype=dt).tobytes()
+        new_packet[count:count+len(gyro_readings)] = gyro_readings
+        count += len(gyro_readings)
+        
+    return new_packet

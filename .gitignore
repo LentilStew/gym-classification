@@ -7,3 +7,23 @@ venv/
 # Ignore Python bytecode cache files
 __pycache__/
 *.pyc
+
+src/debug.py
+
+
+src/sequentia.ipynb
+
+src/switch.py
+
+src/test2
+
+src/numpy_playground.ipynb
+
+
+src/Kfolds.ipynb
+src/lstm.ipynb
+
+src/save_centroids.py
+src/logs/*
+
+motions_backup/*
